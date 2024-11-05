@@ -1,0 +1,2 @@
+# rescueed.github.io
+RescueEdのホームページ

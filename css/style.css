@@ -1,0 +1,34 @@
+@charset "udf-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    line-height: 1.7;
+}
+
+/* レイアウト */
+main {
+    width: 940px;
+    margin: 3rem auto 4rem;
+}
+
+main h1 {
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+main h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+main h3 {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>RescueEd</title>
+    <meta name="keywords" content="防災,教育,システム,IT,システム開発" />
+    <meta name="description" content="金沢工業大学の学生で活動しています。">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--ファビコン-->
+    <link rel="icon" type="img/jpg" href="img/logo/logo_10000^2_bl.jpg">
+
+    <!--リセットcss-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet" />
+
+    <!-- オリジナルCSS -->
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header></header>
+    <main></main>
+
+    <!-- fotterを別ファイルから同期 -->
+    <footer>
+        <iframe src="footer.html"></iframe>
+    </footer>
+
+    <style>
+        footer iframe {
+            width: 100%; /* 横幅をページ全体に広げる */
+            height: auto; /* 高さは自動調整 */
+            border: none; /* 枠線を非表示 */
+            overflow: hidden; /* スクロールバーを非表示 */
+        }
+
+        footer {
+            text-align: center; /* フッター内の文字をセンタリング */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</body>
+
+</html>

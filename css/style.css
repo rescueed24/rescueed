@@ -58,7 +58,7 @@ main h3 {
     margin-bottom: 5px;
     color: #1a9bd1;
 }
-
+/*ここから operation.html にかかわる内容 */
 #ToOperation {
     border-radius: 5px;
     background-color: lightblue;
@@ -66,3 +66,27 @@ main h3 {
     text-decoration: none;
     color: white;
   }
+
+.calendar {
+display: flex;
+justify-content: space-between;
+}
+
+.month {
+    width: 45%;
+}
+
+.month h3 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+
+.events {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.events li {
+    margin-bottom: 10px;
+}
+/* ここまで */

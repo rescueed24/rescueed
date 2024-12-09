@@ -8,4 +8,18 @@ footer {
     background-color: #f0f0f0;
     align-items: center;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer iframe {
+    width: 100%;
+    /* 横幅をページ全体に広げる */
+    height: auto;
+    /* 高さは自動調整 */
+    border: none;
+    /* 枠線を非表示 */
+    overflow: hidden;
+    /* スクロールバーを非表示 */
 }

@@ -63,8 +63,8 @@ main h3 {
     color: #1a9bd1;
 }
 
-/*ここから operation.html にかかわる内容 */
-#ToOperation {
+/*ここから report.html にかかわる内容 */
+#ToReport {
     border-radius: 5px;
     background-color: lightblue;
     padding: 10px;

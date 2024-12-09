@@ -1,8 +1,67 @@
 @charset "utf-8";
 
 body {
-    font-family: "Yu Mincho", YuMincho, serif;
+    font-family: "教科書体", YuMincho, "serif";
 }
+
+/* ここから header 部分 */
+/* ヘッダー全体のデザイン */
+header {
+    background-color: #2f4f6f; /* 暗すぎない青色 */
+    padding: 15px 25px; /* 余白を調整 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ナビゲーションメニュー */
+nav {
+    display: flex; /* 横並びにする */
+    align-items: center; /* 縦方向の位置を中央揃え */
+    justify-content: flex-start; /* 左寄せ */
+}
+
+/* メニューアイテムのデザイン */
+nav ul {
+    list-style: none; /* リストのスタイルを削除 */
+    margin: 0;
+    padding: 0;
+    display: flex; /* リスト項目を横並びに */
+}
+
+/* 各メニュー項目 */
+nav ul li {
+    margin-right: 20px; /* メニュー項目間のスペース */
+}
+
+#index,
+#report,
+#about,
+#contact {
+    color: aliceblue; /* テキストの色 */
+    text-decoration: none; /* 下線を消す */
+    font-size: 16px; /* 文字サイズ */
+    /* font-weight: bold;  太字 */
+    padding: 5px 10px; /* 内側の余白（枠内の文字の余裕） */
+    border: 2px solid aliceblue; /* 枠の太さ、スタイル、色 */
+    border-radius: 5px; /* 角を丸くする */
+    transition: background-color 0.3s ease, color 0.3s ease; /* なめらかな色変化 */
+}
+
+/* ホバー時の効果 */
+#index:hover,
+#report:hover,
+#about:hover,
+#contact:hover {
+    color: #04ff00; /* ホバー時の色 */
+}
+
+/* 検索アイコンのデザイン */
+.search-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* ここまで header 部分 */
 
 footer {
     background-color: #f0f0f0;

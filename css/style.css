@@ -9,6 +9,15 @@ iframe {
     width: 100%;
 }
 
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu img {
+    border-radius: 8px;
+}
+
 /* ここまでheader 部分 */
 
 midashi {

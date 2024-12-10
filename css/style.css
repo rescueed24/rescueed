@@ -4,22 +4,6 @@ html {
     font-size: 100%;
 }
 
-/* ここから header 部分 */
-iframe {
-    width: 100%;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu img {
-    border-radius: 8px;
-}
-
-/* ここまでheader 部分 */
-
 midashi {
     text-align: center;
     font-size: 40px;

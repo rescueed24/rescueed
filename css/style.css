@@ -5,22 +5,27 @@ html {
 }
 
 /* ここから header 部分 */
-iframe{
+iframe {
     width: 100%;
 }
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu img {
+    border-radius: 8px;
+}
+
 /* ここまでheader 部分 */
 
 midashi {
     text-align: center;
     font-size: 40px;
-    color: #1a9bd1;
+    /* color: #1a9bd1; */
+    color: #1a72d1;
     font-weight: bold;
-}
-
-midashi_name {
-    text-align: center;
-    font-size: 40px;
-    color: #004a6d;
 }
 
 midashi-desc {
@@ -33,8 +38,8 @@ midashi-desc {
 }
 
 .line {
-    border-bottom: 2px solid #000;
-    margin-top: 10px;
+    border-bottom: 3px solid #000;
+    margin-top: 20px;
 }
 
 body {

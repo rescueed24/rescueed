@@ -7,10 +7,26 @@ body {
 /* ここから header 部分 */
 /* ヘッダー全体のデザイン */
 header {
-    background-color: #afe6f0; /* 暗すぎない青色 */
-    padding: 15px 25px; /* 余白を調整 */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, #c7f1fb, #d7f7ff, #94d2f3); /* 柔らかい青と白を基調にしたグラデーション */
+    padding: 15px 25px; /* 上下15px、左右25pxの余白 */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 軽いシャドウ */
+    animation: gradientShift 8s infinite; /* グラデーションの動き */
+    background-size: 300% 300%; /* アニメーションを滑らかにするため背景サイズを拡大 */
 }
+
+/* グラデーションの動き */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%; /* グラデーションの開始位置 */
+    }
+    50% {
+        background-position: 100% 50%; /* グラデーションが右に移動 */
+    }
+    100% {
+        background-position: 0% 50%; /* グラデーションが左に戻る */
+    }
+}
+
 
 /* ナビゲーションメニュー */
 nav {
@@ -29,19 +45,20 @@ nav ul {
 
 /* 各メニュー項目 */
 nav ul li {
-    margin-right: 20px; /* メニュー項目間のスペース */
+    margin-right: auto; /* メニュー項目間のスペース */
+    margin-left: auto;
 }
 
 #index,
 #report,
 #about,
 #contact {
-    color: aliceblue; /* テキストの色 */
+    color: rgb(170, 0, 255); /* テキストの色 */
     text-decoration: none; /* 下線を消す */
     font-size: 16px; /* 文字サイズ */
     /* font-weight: bold;  太字 */
-    padding: 5px 10px; /* 内側の余白（枠内の文字の余裕） */
-    border: 2px solid aliceblue; /* 枠の太さ、スタイル、色 */
+    padding: auto auto; /* 内側の余白（枠内の文字の余裕） */
+    border: 2px solid #0f0f0f; /* 枠の太さ、スタイル、色 */
     border-radius: 5px; /* 角を丸くする */
     transition: background-color 0.3s ease, color 0.3s ease; /* なめらかな色変化 */
 }

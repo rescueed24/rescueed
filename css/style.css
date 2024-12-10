@@ -75,7 +75,7 @@ main h3 {
 }
 
 /*ここから report.html にかかわる内容 */
-#ToReport {
+a #ToReport {
     border-radius: 5px;
     background-color: lightblue;
     padding: 10px;

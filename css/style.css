@@ -4,13 +4,6 @@ html {
     font-size: 100%;
 }
 
-/* ここから header 部分 */
-iframe {
-    width: 100%;
-}
-
-/* ここまでheader 部分 */
-
 midashi {
     text-align: center;
     font-size: 40px;
@@ -66,7 +59,7 @@ main h3 {
 }
 
 /*ここから report.html にかかわる内容 */
-#ToReport {
+a #ToReport {
     border-radius: 5px;
     background-color: lightblue;
     padding: 10px;

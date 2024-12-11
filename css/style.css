@@ -7,7 +7,6 @@ html {
 midashi {
     text-align: center;
     font-size: 40px;
-    /* color: #1a9bd1; */
     color: #1a72d1;
     font-weight: bold;
 }
@@ -58,27 +57,24 @@ main h3 {
     color: #1a9bd1;
 }
 
-/*ここから report.html にかかわる内容 */
-/* 「活動報告トップページへ戻る」のリンクデザイン */
+/* ここから report.html にかかわる内容 */
 #ToReport {
-    border-radius: 5px; /* 角を丸くする */
-    background-color: lightblue; /* 背景色 */
-    padding: 10px; /* 内側の余白 */
-    text-decoration: none; /* 下線を消す */
-    color: white; /* 文字色 */
-    display: inline-block; /* リンクをボタンのように見せる */
-    font-size: 14px; /* 文字サイズ */
-    font-weight: bold; /* 太字 */
-    text-align: center; /* テキストを中央揃え */
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
 }
 
-/* ホバー時の効果 */
 #ToReport:hover {
-    background-color: deepskyblue; /* 背景色を変更 */
-    color: white; /* 文字色を維持 */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 軽い影を追加 */
+    background-color: deepskyblue;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
 
 .calendar {
     display: flex;
@@ -102,5 +98,3 @@ main h3 {
 .events li {
     margin-bottom: 10px;
 }
-
-/* ここまで */

@@ -59,13 +59,26 @@ main h3 {
 }
 
 /*ここから report.html にかかわる内容 */
-a #ToReport {
-    border-radius: 5px;
-    background-color: lightblue;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
+/* 「活動報告トップページへ戻る」のリンクデザイン */
+#ToReport {
+    border-radius: 5px; /* 角を丸くする */
+    background-color: lightblue; /* 背景色 */
+    padding: 10px; /* 内側の余白 */
+    text-decoration: none; /* 下線を消す */
+    color: white; /* 文字色 */
+    display: inline-block; /* リンクをボタンのように見せる */
+    font-size: 14px; /* 文字サイズ */
+    font-weight: bold; /* 太字 */
+    text-align: center; /* テキストを中央揃え */
 }
+
+/* ホバー時の効果 */
+#ToReport:hover {
+    background-color: deepskyblue; /* 背景色を変更 */
+    color: white; /* 文字色を維持 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 軽い影を追加 */
+}
+
 
 .calendar {
     display: flex;

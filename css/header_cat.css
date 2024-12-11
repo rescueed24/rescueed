@@ -6,14 +6,16 @@
     width: 100%;
     height: 40px;
     overflow: hidden;
-    z-index: 1; /* 猫を背景レイヤーに設定 */
+    z-index: -1;
+    /* 猫を背景レイヤーに設定 */
 }
 
 /* 猫画像 */
 .cat {
     position: absolute;
     bottom: 0;
-    left: -100px; /* 最初は画面外 */
+    left: -100px;
+    /* 最初は画面外 */
     width: 40px;
     height: auto;
     animation: walk-cat 8s linear infinite;
@@ -22,13 +24,18 @@
 /* 猫のアニメーション */
 @keyframes walk-cat {
     0% {
-        left: -100px; /* 画面左外 */
+        left: -100px;
+        /* 画面左外 */
     }
+
     50% {
-        transform: translateY(-10px); /* 軽いジャンプ */
+        transform: translateY(-10px);
+        /* 軽いジャンプ */
     }
+
     100% {
-        left: 100%; /* 画面右外 */
+        left: 100%;
+        /* 画面右外 */
     }
 }
 
@@ -41,7 +48,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 2; /* 文字とロゴを最前面に */
+    z-index: 0;
+    /* 文字とロゴを最前面に */
 }
 
 /* ロゴのスタイル */
@@ -49,5 +57,12 @@ header {
     font-size: 20px;
     font-weight: bold;
     color: #1a72d1;
-    z-index: 2; /* 最前面に配置 */
+    z-index: 0;
+    /* 最前面に配置 */
+    flex-shrink: 0;
+}
+
+.menu {
+    margin-left: auto;
+    display: flex;
 }

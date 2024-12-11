@@ -47,7 +47,6 @@ header {
     padding: 15px 25px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     z-index: 0;
     /* 文字とロゴを最前面に */
 }
@@ -63,6 +62,5 @@ header {
 }
 
 .menu {
-    margin-left: auto;
-    display: flex;
+    margin-right: auto;
 }

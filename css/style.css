@@ -18,12 +18,12 @@ midashi-desc {
 }
 
 .indent {
-    margin-left: 30px;
+    margin-inline-start: 30px;
 }
 
 .line {
-    border-bottom: 3px solid #000;
-    margin-top: 20px;
+    border-block-end: 3px solid #000;
+    margin-block-start: 20px;
 }
 
 body {
@@ -33,13 +33,13 @@ body {
 
 /* レイアウト */
 main {
-    width: 80%;
+    inline-size: 80%;
     margin: 3rem auto 4rem;
 }
 
 main h1 {
     padding: 5px 10px;
-    margin-bottom: 10px;
+    margin-block-end: 10px;
     font-size: 1.8em;
     color: #1a9bd1;
 }
@@ -47,14 +47,14 @@ main h1 {
 main h2 {
     font-size: 1.5em;
     text-align: center;
-    margin-bottom: 15px;
+    margin-block-end: 15px;
     color: #1a9bd1;
 }
 
 main h3 {
     font-size: 1.2em;
     text-align: center;
-    margin-bottom: 5px;
+    margin-block-end: 5px;
     color: #1a9bd1;
 }
 
@@ -74,7 +74,7 @@ main h3 {
 
 /* ホバー時の効果 */
 #ToReport:hover {
-    background-color: deepskyblue; /* 背景色を変更 */
+    background-color: deepskyblue; /* 景色を変更 */
     color: white; /* 文字色を維持 */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 軽い影を追加 */
 }
@@ -86,21 +86,21 @@ main h3 {
 }
 
 .month {
-    width: 45%;
+    inline-size: 45%;
 }
 
 .month h3 {
-    border-bottom: 1px solid #000;
-    padding-bottom: 5px;
+    border-block-end: 1px solid #000;
+    padding-block-end: 5px;
 }
 
 .events {
     list-style: none;
-    padding-left: 20px;
+    padding-inline-start: 20px;
 }
 
 .events li {
-    margin-bottom: 10px;
+    margin-block-end: 10px;
 }
 
 /* ここまで */

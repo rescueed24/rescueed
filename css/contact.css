@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  form {
+    max-inline-size: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-block-end: 8px;
+    font-weight: bold;
+  }
+  
+  select, input, textarea {
+    inline-size: 100%;
+    padding: 10px;
+    margin-block-end: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  input[type="checkbox"] {
+    margin-inline-end: 8px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-block-start: -15px;
+    margin-block-end: 20px;
+  }
+  
+  button {
+    background-color: #6200ea;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #4500b0;
+  }
+  
+  .button-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .urgent-button {
+    align-self: flex-end;
+  }
+  

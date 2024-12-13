@@ -21,7 +21,7 @@
 
     <!-- オリジナルCSS -->
     <link rel="stylesheet" href="css/header_footer.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
@@ -40,7 +40,73 @@
         </div>
     </header>
     <main>
-        <midashi>現在構築中です。公開まで今しばらくお待ちください。</midashi>
+        <form id="contact-form" method="post" action="https://script.google.com/macros/s/AKfycbypfud-gElSNTgIhY4HnjnLu2cs9YNvFgUgnc9-cExUifcRtatjmLeSGf32Hw_39W8HMA/exec">
+            <!-- お問い合わせ内容の選択 -->
+            <label for="inquiry-type">お問い合わせ内容をお選びください。<span style="color: red;"> *</span></label>
+            <select id="inquiry-type" name="inquiry-type" required>
+              <option value="" disabled selected>選択</option>
+              <option value="団体情報">団体情報に関するお問い合わせ</option>
+              <option value="活動情報">活動に関するお問い合わせ</option>
+              <option value="個人情報">個人情報に関するお問い合わせ</option>
+              <option value="意見・要望">当ウェブサイトへのご意見・ご要望</option>
+              <option value="その他">その他</option>
+            </select>
+            <p class="error-message">この質問は必須です</p>
+        
+            <!-- お問い合わせ内容の記入 -->
+            <label for="inquiry-details">お問い合わせ内容を書きください。<span style="color: red;"> *</span></label>
+            <textarea id="inquiry-details" name="inquiry-details" rows="4" required></textarea>
+        
+            <!-- 至急チェック -->
+            <label for="urgent">
+                <a>至急の内容の場合は☑を入れてください。</a>
+                <a><input type="checkbox" id="urgent" name="urgent" value="至急"></a>
+            </label>
+        
+            <hr />
+        
+            <!-- 連絡先情報 -->
+            <label for="name">氏名<span style="color: red;"> *</span></label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="anonymous"
+                required
+            />
+
+            <label for="email">メールアドレス<span style="color: red;"> *</span></label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="例）rescued@example.com" 
+              required 
+            />
+            <p>RescueEdより連絡させていただく場合がございます。</p>
+        
+            <label for="organization">所属企業 / 所属団体</label>
+            <input 
+              type="text" 
+              id="organization" 
+              name="organization" 
+              placeholder="回答を入力"
+            />
+        
+            <label for="phone">お電話番号</label>
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              placeholder="回答を入力"
+            />
+        
+            <!-- ボタン -->
+            <div class="button-group">
+              <button type="submit">送信</button>
+              <button type="reset">フォームをクリア</button>
+            </div>
+          </form>
     </main>
 
     <!-- fotterを別ファイルから同期 -->

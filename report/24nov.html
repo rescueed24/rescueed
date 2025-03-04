@@ -20,46 +20,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet" />
 
     <!-- オリジナルCSS -->
-    <link rel="stylesheet" href="css/header_footer.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/header_footer.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="./index.html" id="index">ホーム</a>
-            <a href="./report.html" id="report">活動報告</a>
-            <a href="./about.html" id="about">RescueEdとは</a>
-            <a href="./contact.html" id="contact">お問い合わせ</a>
-            <!-- <a href="#search"><img src="search-icon.svg" alt="検索" class="search-icon"></a> -->
-        </nav>
+        <!--
+            <iframe src="header.html" frameborder="0"></iframe> -->
+        <midashi>
+            <p>活動報告</p>
+        </midashi>
+        <midashi-desc>
+            <p>こちらは活動報告のページです。</p>
+        </midashi-desc>
     </header>
-    <midashi>
-        <p>活動報告</p>
-    </midashi>
-    <midashi-desc>
-        <p>こちらは活動報告のページです。</p>
-    </midashi-desc>
-  
     <main>
-        <box>
-            <p>
-                2024
-            </p>
-            <p>
-                <a href="report/24nov.html">11月</a>
-            </p>
-        </box>
-        <box>
-            <p>2025</p>
-            <p><a href="report/25march.html">3月</a></p>
-        </box>
+        <div class="calendar">
+            <div class="month">
+                <h3>2024年 11月 2日</h3>
+                <ul class="events">
+                    <li>CivicTech Meeting KANAZAWA 2024</li>
+                </ul>
+            </div>
+            <div class="month">
+                <h3>2024年 11月 15日</h3>
+                <ul class="events">
+                    <li>令和6年度 地域課題解決マッチングイベント</li>
+                </ul>
+            </div>
+        </div>
+        <a href="../report.html" id="ToReport">活動報告トップページへ戻る</a>
     </main>
 
     <!-- fotterを別ファイルから同期 -->
     <footer>
-        <iframe src="footer.html"></iframe>
+        <iframe src="../footer.html"></iframe>
     </footer>
+
 </body>
 
 </html>

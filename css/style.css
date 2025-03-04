@@ -4,23 +4,12 @@ html {
     font-size: 100%;
 }
 
-/* ここから header 部分 */
-iframe{
-    width: 100%;
-}
-/* ここまでheader 部分 */
-
 midashi {
     text-align: center;
     font-size: 40px;
-    color: #1a9bd1;
+    /* color: #1a9bd1; */
+    color: #1a72d1;
     font-weight: bold;
-}
-
-midashi_name {
-    text-align: center;
-    font-size: 40px;
-    color: #004a6d;
 }
 
 midashi-desc {
@@ -29,12 +18,12 @@ midashi-desc {
 }
 
 .indent {
-    margin-left: 30px;
+    margin-inline-start: 30px;
 }
 
 .line {
-    border-bottom: 2px solid #000;
-    margin-top: 10px;
+    border-block-end: 3px solid #000;
+    margin-block-start: 20px;
 }
 
 body {
@@ -44,13 +33,13 @@ body {
 
 /* レイアウト */
 main {
-    width: 80%;
+    inline-size: 80%;
     margin: 3rem auto 4rem;
 }
 
 main h1 {
     padding: 5px 10px;
-    margin-bottom: 10px;
+    margin-block-end: 10px;
     font-size: 1.8em;
     color: #1a9bd1;
 }
@@ -58,25 +47,38 @@ main h1 {
 main h2 {
     font-size: 1.5em;
     text-align: center;
-    margin-bottom: 15px;
+    margin-block-end: 15px;
     color: #1a9bd1;
 }
 
 main h3 {
     font-size: 1.2em;
     text-align: center;
-    margin-bottom: 5px;
+    margin-block-end: 5px;
     color: #1a9bd1;
 }
 
 /*ここから report.html にかかわる内容 */
+/* 「活動報告トップページへ戻る」のリンクデザイン */
 #ToReport {
-    border-radius: 5px;
-    background-color: lightblue;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
+    border-radius: 5px; /* 角を丸くする */
+    background-color: lightblue; /* 背景色 */
+    padding: 10px; /* 内側の余白 */
+    text-decoration: none; /* 下線を消す */
+    color: white; /* 文字色 */
+    display: inline-block; /* リンクをボタンのように見せる */
+    font-size: 14px; /* 文字サイズ */
+    font-weight: bold; /* 太字 */
+    text-align: center; /* テキストを中央揃え */
 }
+
+/* ホバー時の効果 */
+#ToReport:hover {
+    background-color: deepskyblue; /* 景色を変更 */
+    color: white; /* 文字色を維持 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 軽い影を追加 */
+}
+
 
 .calendar {
     display: flex;
@@ -84,21 +86,21 @@ main h3 {
 }
 
 .month {
-    width: 45%;
+    inline-size: 45%;
 }
 
 .month h3 {
-    border-bottom: 1px solid #000;
-    padding-bottom: 5px;
+    border-block-end: 1px solid #000;
+    padding-block-end: 5px;
 }
 
 .events {
     list-style: none;
-    padding-left: 20px;
+    padding-inline-start: 20px;
 }
 
 .events li {
-    margin-bottom: 10px;
+    margin-block-end: 10px;
 }
 
 /* ここまで */
